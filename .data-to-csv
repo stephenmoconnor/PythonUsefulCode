@@ -1,0 +1,9 @@
+import pandas as pd
+
+data = pd.read_csv("file.data")
+#.data file wilol open only in a text editor such as visual studio code
+
+data.columns = ["column1", "column2", column3"]
+
+data.to_csv("data.csv", index = None, header=True)
+#can name file anything 
