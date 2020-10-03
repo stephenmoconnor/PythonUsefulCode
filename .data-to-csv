@@ -10,6 +10,7 @@ data = pd.read_csv(r"C:\Users\Stephen\Downloads\abalone.data")
 #.data file will open only in a text editor such as visual studio code
 
 data.columns = ["Sex", "Length", "Diameter", "Height", "Whole-Weight", "Shucked_Weight", "Viscera_Weight", "Shell_Weight", "Rings"]
+#find these on the .names file usually
 
 data.to_csv(r"C:\Users\Stephen\Downloads\abalone.csv", index = None, header=True)
 #can name file anything 
