@@ -1,9 +1,15 @@
+Example of how to change a .data file to a csv file:
+
+
+
+
+
 import pandas as pd
 
-data = pd.read_csv("file.data")
+data = pd.read_csv(r"C:\Users\Stephen\Downloads\abalone.data")
 #.data file will open only in a text editor such as visual studio code
 
-data.columns = ["column1", "column2", column3"]
+data.columns = ["Sex", "Length", "Diameter", "Height", "Whole-Weight", "Shucked_Weight", "Viscera_Weight", "Shell_Weight", "Rings"]
 
-data.to_csv("data.csv", index = None, header=True)
+data.to_csv(r"C:\Users\Stephen\Downloads\abalone.csv", index = None, header=True)
 #can name file anything 
